@@ -19,18 +19,6 @@ window.addEventListener('load', function() {
     function addButtons(codeBlockSelector, btn) {
       document.querySelectorAll(codeBlockSelector).forEach(function(code) {
         code.parentNode.appendChild(btn.cloneNode(true));
-        var x = code.className.split("{");
-        var y = x[1].split("}");
-        var z = y[0].split(",");
-        z.forEach(o=>{
-          //highlighter
-          var temp = document.createElement('div');
-          temp.setAttribute('aria-hidden','true');
-          temp.style.top = ((parseInt(o, 10)-1)*24).toString()+"px";
-          temp.style.height = "24px";
-          temp.classList.add("line-highlight");
-          code.parentNode.appendChild(temp);
-        })
       });
     }
   

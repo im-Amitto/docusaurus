@@ -11,7 +11,13 @@ Check the [documentation](https://docusaurus.io) for how to use Docusaurus.
 - ### Markdown Location :  docs/doc1.md
 
 ## Mauris In Code
-``` javascript line-numbers {1}
+``` javascript line-numbers {1-3,5}
+   var message = "these two lines should be a code block";  
+   console.log(message);
+   var message = "these two lines should be a code block";  
+   console.log(message);
+   var message = "these two lines should be a code block";  
+   console.log(message);
    var message = "these two lines should be a code block";  
    console.log(message);
 ```
