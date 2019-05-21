@@ -45,4 +45,4 @@
 >_replce . with `_
 
 #### Ouput
-![Snapshot](data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==)
+![Snapshot](https://github.com/bigbinary/markdown-book-generator/blob/master/snapshot/snapshot.png?raw=true)
