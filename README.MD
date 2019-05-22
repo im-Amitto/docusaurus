@@ -11,14 +11,6 @@
 2. cd website
 3. npm start
 
-### Directory Descriptions
-
-* **Documentation Source Files**: The `docs` directory
-  contains example documentation files written in Markdown.
-* **Blog**: The `website/blog` directory contains examples of blog posts written in markdown.
-* **Pages**: The `website/pages` directory contains example top-level pages for the site.
-* **Static files and images**: The `website/static` directory contains static assets used by the example site.
-
 ### Key Files
 
 * **Footer**: The `website/core/Footer.js` file is a React component that acts
