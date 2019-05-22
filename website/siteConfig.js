@@ -49,12 +49,12 @@ const siteConfig = {
   scripts: [
     'https://buttons.github.io/buttons.js',
     'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
-    '../../js/code-block-buttons.js',
-    '../../js/prism.js',
-    '../../js/highlighter.js',
+    '../js/code-block-buttons.js',
+    '../js/prism.js',
+    '../js/highlighter.js',
   ],
   stylesheets: [
-    '../../css/prism.css'
+    '../css/prism.css'
   ],
 
   // On page navigation for the current documentation page.
