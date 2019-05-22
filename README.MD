@@ -5,7 +5,7 @@
 - Docusaurus
 
 ## WebView
--  [click me to see demo](https://im-amitto.github.io/docusaurus/website/build/bigbinary-ebook)
+-  [click me to see demo](https://im-amitto.github.io/docusaures-website)
 ## Home Page
 - docs/doc1.md
 ## How to run
