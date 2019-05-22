@@ -1,8 +1,8 @@
 const siteConfig = {
   title: 'BigBinary Ebook', // Title for website.
   tagline: 'markdown-book-generator ',
-  url: 'https://your-docusaurus-test-site.com', // website URL
-  baseUrl: 'https://im-amitto.github.io/docusaurus/website/build/bigbinary%20ebook',
+  url: 'https://im-amitto.github.io/', // website URL
+  baseUrl: 'https://im-amitto.github.io/docusaurus/website/build/bigbinary%20ebook/',
 
   projectName: 'bigbinary ebook',
   organizationName: 'bigbinary',
@@ -49,13 +49,13 @@ const siteConfig = {
   scripts: [
     'https://buttons.github.io/buttons.js',
     'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
-    '/js/code-block-buttons.js',
-    '/js/prism.js',
-    '/js/highlighter.js',
+    '../../js/code-block-buttons.js',
+    '../../js/prism.js',
+    '../../js/highlighter.js',
   ],
   stylesheets: [
-    '/css/code-block-buttons.css',
-    '/css/prism.css'
+    '../../css/code-block-buttons.css',
+    '../../css/prism.css'
   ],
 
   // On page navigation for the current documentation page.
