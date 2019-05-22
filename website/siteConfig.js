@@ -1,8 +1,8 @@
 const siteConfig = {
   title: 'BigBinary Ebook', // Title for website.
   tagline: 'markdown-book-generator ',
-  url: 'https://im-amitto.github.io/docusaurus/', // website URL
-  baseUrl: 'https://im-amitto.github.io/docusaurus/website/build/bigbinary-ebook/',
+  url: 'http://localhost/', // website URL
+  baseUrl: 'http://localhost/',
 
   projectName: 'bigbinary-ebook',
   organizationName: 'bigbinary',
