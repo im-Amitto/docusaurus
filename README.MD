@@ -23,7 +23,7 @@
   of the documentation files.
 * **Highlighter**: The `website/static/js/highlighter.js` file contains the code for highlighting.
 ## Example
-### Highlghting && line nuumbers
+#### Highlighting && line nuumbers
 ```Markdown
 ...ruby{4}
 def create
