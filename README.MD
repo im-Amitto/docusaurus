@@ -25,18 +25,16 @@
 ## Example
 ### Highlghting && line nuumbers
 ```Markdown
-... javascript line-numbers {1-3,5}
-   var message = "these two lines should be a code block";  
-   console.log(message);
-   var message = "these two lines should be a code block";  
-   console.log(message);
-   var message = "these two lines should be a code block";  
-   console.log(message);
-   var message = "these two lines should be a code block";  
-   console.log(message);
+...ruby{4}
+def create
+  @task = Task.new(task_params)
+  @task.save
+  # Redirect to the show page
+  redirect_to task_url(@task)
+end
 ...
 ```
->_replce . with `_
+> ### _replce "." with "`"_
 
 #### Ouput
 ![Snapshot](https://github.com/bigbinary/markdown-book-generator/blob/master/snapshot/snapshot.png?raw=true)
