@@ -93,7 +93,7 @@ Add following line to `/app/config/routes.rb`.
 ```
 
 
-## 4.5 - Implementing create action
+## 4.4 - Implementing create action
 
 Open `/app/controllers/tasks_controller.rb` and
 add following code.
@@ -137,7 +137,7 @@ This is for security purpose so that unnecessary attributes should not get updat
 5) Using `redirect_to tasks_path` route directs the control to the `index` action.
 We can then see our new todo added to the list.
 
-## 4.6 - Verify changes in Rails console after submitting the form
+## 4.5 - Verify changes in Rails console after submitting the form
 
 We can verify whether an entry has been created in the database after form is submitted.
 

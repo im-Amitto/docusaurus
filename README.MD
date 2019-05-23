@@ -1,17 +1,67 @@
 # Markdown Book Genrator
 
 ## Prerequisite
-- You have to be on Node >= 8.x and Yarn >= 1.5.
-- Docusaurus
+- You have to be on [Node](https://nodejs.org/en/) >= 8.x and [Yarn](https://yarnpkg.com/en/) >= 1.5.
+- [Docusaurus](https://docusaurus.io/)
 
 ## WebSite
--  [click me to see website](https://im-amitto.github.io/docusaures-website)
+-  [Click Me](https://im-amitto.github.io/docusaures-website)
 
 ## How to run
-1. npm install
-2. cd website
-3. npm install
-4. npm start
+1. Clone the repository  
+    ```bash
+    $ git clone https://github.com/bigbinary/markdown-book-generator.git
+    ```
+2. Go to website directory  
+    ```bash
+    $ cd website
+    ```
+3. Install required node modules  
+    ```bash
+    $ npm install
+    ```
+4. Run Docusaurus Server  
+    ```bash
+    $ npm start
+    ```
+5. Building Static HTML Pages  
+  To create a static build of your website, run the following script from the `website` directory:
+    ```bash
+    $ npm run build
+    ```
+    You can find your generated e-book at `website/build` folder.  
+
+6. [Publish Your E-book](https://docusaurus.io/docs/en/publishing)
+
+## Adding a chapter
+  1. every chapter markdown should start with  
+      ```markdown
+      ---
+      id: chapter_<chapter-number>
+      title: Chapter <chapter-number> <chapter name>  
+      sidebar_label: Installation //Customize name for sidebar (Optional)
+      ---
+      ```
+  2. write the chapter
+  3. To show line-number in code-block.  
+  just add `'line-numbers'` in your code-block.
+      ```markdown
+      ```ruby line-numbers
+      def create
+        @task = Task.new(task_params)
+      ...
+      ...
+      ```
+  4. To highlight a line in code block.  
+  just add the line number within `'{}'`. eg.,`{2}` or `{1-4,3}`
+      ```markdown
+      ```ruby{4}
+      def create
+        @task = Task.new(task_params)
+      ...
+      ...
+      ```
+  5. Upload the chapter to `docs` folder in `root` directory
 
 ### Key Files
 
@@ -25,16 +75,12 @@
 ## Example
 #### Highlighting && line nuumbers
 ```Markdown
-...ruby{4}
+```ruby{4}
 def create
   @task = Task.new(task_params)
-  @task.save
-  # Redirect to the show page
-  redirect_to task_url(@task)
-end
+...
 ...
 ```
-> ### _replce "." with "`"_
 
 #### Ouput
 ![Snapshot](https://github.com/bigbinary/markdown-book-generator/blob/master/snapshot/snapshot.png?raw=true)

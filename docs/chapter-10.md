@@ -22,7 +22,7 @@ end
 
 Now let's generate a migration so that we have a table named `users`.
 
-```
+```bash
 $ rails generate migration CreateUser
 Running via Spring preloader in process 30090
       invoke  active_record
@@ -56,7 +56,7 @@ end
 
 Now we need to migrate these changes into our database.
 
-```
+```bash
 $ rails db:migrate
 ```
 
@@ -68,8 +68,8 @@ this column `user_id` since it will stored user id of the person to whom the tas
 
 So let's create a migration to add column `user_id` to `tasks` table.
 
-```
-$rails generate migration add_user_id_to_tasks
+```bash
+$ rails generate migration add_user_id_to_tasks
 ```
 
 The migration file will look like this.
@@ -85,8 +85,8 @@ end
 Now we'll add a foreign key constraint to the tasks table so that it has only valid user ids in 
 `user_id` column.
 
-```
-$rails g migration AddForeignKeyToTask
+```bash
+$ rails g migration AddForeignKeyToTask
 ```
 
 Add following line to migrated file.
@@ -108,8 +108,8 @@ The fourth parameter options as `on_delete: :cascade`. This option makes sure th
 
 Now run db:migrate command to reflect it into the database.
 
-```
-$rails db:migrate
+```bash
+$ rails db:migrate
 ```
 
 ## 10.3 Defining associations betweek Task and User models
@@ -142,7 +142,7 @@ similar to how we had done in `Task`.
 
 For now, Let's create user records from Rails console.
 
-```
+```bash
 $ rails console
 
 irb(main):004:0> User.create(name: "Sam")
@@ -169,7 +169,7 @@ Now while creating a task we will assign a user to that task.
 
 Update `tasks/new.html.erb` file as following:
 
-```
+```ruby
       .
       .
       .
