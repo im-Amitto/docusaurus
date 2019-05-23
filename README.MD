@@ -4,14 +4,14 @@
 - You have to be on Node >= 8.x and Yarn >= 1.5.
 - Docusaurus
 
-## WebView
--  [click me to see demo](https://im-amitto.github.io/docusaures-website)
-## Home Page
-- docs/doc1.md
+## WebSite
+-  [click me to see website](https://im-amitto.github.io/docusaures-website)
+
 ## How to run
 1. npm install
 2. cd website
-3. npm start
+3. npm install
+4. npm start
 
 ### Key Files
 
@@ -23,7 +23,7 @@
   of the documentation files.
 * **Highlighter**: The `website/static/js/highlighter.js` file contains the code for highlighting.
 ## Example
-
+### Highlghting && line nuumbers
 ```Markdown
 ... javascript line-numbers {1-3,5}
    var message = "these two lines should be a code block";  
