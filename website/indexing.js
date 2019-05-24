@@ -69,7 +69,7 @@ title: `+element.title+`
     if (err) console.log(err);
   });
 
-  fs.writeFile(__dirname+'/sidebars.json', JSON.stringify(sidebar), (err) => {
+  fs.writeFile(__dirname+'/sidebars.json', JSON.stringify(sidebar, null, "\t"), (err) => {
     if (err) console.log(err);
   });
 
