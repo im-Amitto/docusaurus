@@ -1,8 +1,3 @@
----
-id: chapter-2
-title: Chapter 2 - Task model
----
-
 ## Create Task Model
 
 Let's create a model.

@@ -1,8 +1,3 @@
----
-id: chapter-10
-title: Introducing User model
----
-
 A task need to be assigned to a user to get it done.
 In this chapter we will see how to assign a user to a task.
 

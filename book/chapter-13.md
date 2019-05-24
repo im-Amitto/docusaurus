@@ -1,8 +1,3 @@
----
-id: chapter-13
-title: State Management via Ajax
----
-
 In this chapter, we'll add states for our Task.
 
 ## Introduce various states in tasks like open, in progress, done

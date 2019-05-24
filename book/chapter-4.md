@@ -1,8 +1,3 @@
----
-id: chapter-4
-title: Adding tasks through browser
----
-
 In the last chapter we created `TasksController` and added `index` action to it.
 
 ## Introducing link_to

@@ -1,8 +1,3 @@
----
-id: chapter-12
-title: Introduction to Authorization
----
-
 ## What is Authorization ?
 
 Authorization in simple terms, means `What all You can do`. The `You` comes from the authentication which we saw in the previous chapter and as we can’t determine `what you can do` unless we know `who you are`, this makes `Authentication` to be required for `Authorization`.

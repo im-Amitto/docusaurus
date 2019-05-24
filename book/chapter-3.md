@@ -1,11 +1,3 @@
----
-id: chapter-3
-title: Tasks controller
----
-
-In the last chapter we created Task model and then we created Tasks table..
-In this chapter we'll create tasks and will display them in the browser.
-
 ## Controller and Actions
 
 Rails `Controllers` are Ruby classes, that store a series of actions.

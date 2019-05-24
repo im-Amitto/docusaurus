@@ -1,9 +1,3 @@
----
-id: chapter-9
-title: Active Record Callbacks and Object Life Cycle
----
-## Introduction
-
 When a blog is created then we might want to generate a permanent url for the blog.
 Similarly when someone changes the password then we might want to send an email to the user that password has been changed.
 

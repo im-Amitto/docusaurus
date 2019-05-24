@@ -1,8 +1,3 @@
----
-id: chapter-6
-title: Update the task
----
-
 ## Implement Edit Task
 
 So far we have implemented how to `create` new tasks, how to view the newly created task's details using the `show` action.

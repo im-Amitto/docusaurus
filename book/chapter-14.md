@@ -1,8 +1,3 @@
----
-id: chapter-14
-title: Adding comments to Tasks
----
-
 In this chapter, we'll add the feature to **Display** and **Add Comments** on a Task's show page.
 
 ## Introduce Comment Model

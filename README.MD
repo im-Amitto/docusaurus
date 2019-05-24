@@ -20,18 +20,21 @@
     ```bash
     $ npm install
     ```
-4. Run Docusaurus Server  
+4. Run Docusaurus Server
+    It will generate the required files in `docs/` folder and will open a website at port 3000  
     ```bash
     $ npm start
     ```
 5. Building Static HTML Pages  
-  To create a static build of your website, run the following script from the `website` directory:
+  To create a static build of your website, run the following script from the `website` directory
     ```bash
     $ npm run build
     ```
     You can find your generated e-book at `website/build` folder.  
 
 6. [Publish Your E-book](https://docusaurus.io/docs/en/publishing)
+
+>you can delete `docs` folder as it's generated whenever you build the project
 
 ## Adding a chapter
   1. Upload the chapter in chapter folder

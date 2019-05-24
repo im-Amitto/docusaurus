@@ -1,8 +1,3 @@
----
-id: chapter-19
-title: Configuring Queue Adapters for Background Processing
----
-
 As our application size grows,
 it becomes important to offload some computing/processing
 to run in the background so that the end user's

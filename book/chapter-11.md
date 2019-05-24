@@ -1,9 +1,3 @@
----
-id: chapter-11
-title: Authentication
----
-
-
 ## Bcrypt gem.
 
 Authentication involves validating password provided by a user. 

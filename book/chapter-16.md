@@ -1,8 +1,3 @@
----
-id: chapter-16
-title: Introduction to Testing and Writing Unit Tests
----
-
 ## Why write tests?
 Testing is an important aspect of software development life cycle.
 It is a means to ensure the quality of product is maintained.

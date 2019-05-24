@@ -1,8 +1,3 @@
----
-id: chapter-7
-title: Delete the task
----
-
 In the last chapter, we saw how to update a task to the database. 
 In this chapter we'll see how to delete a task.
 

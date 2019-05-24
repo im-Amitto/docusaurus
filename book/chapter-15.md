@@ -1,8 +1,3 @@
----
-id: chapter-15
-title: Attaching files
----
-
 Run following command in terminal
 
 ```bash

@@ -1,8 +1,3 @@
----
-id: chapter-5
-title: Show a task
----
-
 In the last chapter, we saw how to create a new task and save it to the database.
 Now let's look at a way to display the newly created task.
 

@@ -1,8 +1,3 @@
----
-id: chapter-8
-title: Introduction to Validation
----
-
 We observe that when we submit the form with a blank description, a new task is created.
 We would want such entries not to be created. So to prevent this, we can add vaidations to our columns.
 

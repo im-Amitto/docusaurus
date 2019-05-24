@@ -1,8 +1,3 @@
----
-id: chapter-1
-title: Building a new Rails application
----
-
 ## Build a new Rails application
 
 Let's create a new Rails application.

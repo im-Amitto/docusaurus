@@ -1,10 +1,17 @@
 var fs = require("fs")
 var path = require('path');
 
-var root = "./../chapters/"
+var root = "./../book/"
 var target = "./../docs/"
 
 var docs = require(root+'ToC.json')
+
+var sidebar = {
+  "docs": {
+    "book": ["index"
+    ]
+  }
+};
 
 var introduction = fs.readFileSync(root+'Introduction.md', 'utf8');
 
@@ -28,6 +35,7 @@ fs.readdir(target, (err, files) => {
       });
     }
     docs.forEach(element => {
+      sidebar['docs']['book'].push(element.name);
       body +=
       `#### [Chapter - `+index+" "+element.title+`](./`+element.name+`)\n`;
       
@@ -58,6 +66,10 @@ title: `+element.title+`
   introduction = introduction.replace('{{table-of-content}}',head+body);
   
   fs.writeFile(target+"Introduction.md", introduction, (err) => {
+    if (err) console.log(err);
+  });
+
+  fs.writeFile(__dirname+'/sidebars.json', JSON.stringify(sidebar), (err) => {
     if (err) console.log(err);
   });
 
