@@ -1,5 +1,5 @@
 const siteConfig = {
-  title: 'BigBinary', // Title for website.
+  title: 'Learn Ruby on Rails', // Title for website.
   tagline: 'markdown-book-generator ',
   url: 'https://your-website-url', // website URL
   baseUrl: '/',
