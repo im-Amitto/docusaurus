@@ -135,9 +135,9 @@ To customize the Visual Studio Code editor by language, we have to run the globa
 Preferences: Configure Language Specific Settings
 ```
 
-![](./../img/configure_indentation_img01.png)
+![](https://github.com/bigbinary/markdown-book-generator/blob/master/book/images/configure_indentation_img01.png?raw=true)
 
-![](./../img/configure_indentation_img02.png)
+![](https://github.com/bigbinary/markdown-book-generator/blob/master/book/images/configure_indentation_img02.png?raw=true)
 
 
 This opens the Language Picker and from the listed languages, select Ruby which then opens up the Settings editor with the language entry where you can add applicable settings.
@@ -150,7 +150,7 @@ In the user settings json file, add the required settings and save the file.
   }
 ```
 
-![](./../img/configure_indentation_img03.png)
+![](https://github.com/bigbinary/markdown-book-generator/blob/master/book/images/configure_indentation_img03.png?raw=true)
 
 
 The indentation for the language Ruby is now set to 2 spaces.In this way we can configure indentation for any language that we use in our application.In the above user settings file, the default value of indentation is set to '4'. This can be changed to any value according to the user preference.

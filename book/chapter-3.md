@@ -50,7 +50,7 @@ end
 now go to the browser and hit `http://0.0.0.0:3000/tasks`.
 
 
-![alt text](./../img/tasksRouteError.png)
+![alt text](https://github.com/bigbinary/markdown-book-generator/blob/master/book/images/tasksRouteError.png?raw=true)
 
 
 
@@ -72,7 +72,7 @@ end
 
 ```
 Now try to refresh the browser.
-![alt text](./../img/indexMissingError.png)
+![alt text](https://github.com/bigbinary/markdown-book-generator/blob/master/book/images/indexMissingError.png?raw=true)
 
 Oops! We have an other error.
 That's because Rails automatically searches for template with name `index.html.erb` within the directory `app/view/ControllerName/`.
@@ -89,7 +89,7 @@ This file is responsible for rendering all tasks' information in the browser.
 <H1>Hello!!</H1>
 ```
 
-![alt text](./../img/HelloIndexPage.png).
+![alt text](https://github.com/bigbinary/markdown-book-generator/blob/master/book/images/HelloIndexPage.png?raw=true).
 
 
 ## Using Rails console add two tasks and Run Task.all

@@ -80,4 +80,4 @@ def create
 ```
 
 #### Ouput
-![Snapshot](https://github.com/bigbinary/markdown-book-generator/blob/master/snapshot/snapshot.png?raw=true)
+![Snapshot](https://github.com/bigbinary/markdown-book-generator/blob/master/snapshot/snapshot.png?raw=true?raw=true)

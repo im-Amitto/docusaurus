@@ -38,7 +38,7 @@ In the view let's make use of `@task` to display `id` and `description`.
 
 Now, let's go to the URL `http://0.0.0.0:3000/tasks/1` to see the task having `id = 1`.
 
-![alt text](./../img/ShowRouteError.png)
+![alt text](https://github.com/bigbinary/markdown-book-generator/blob/master/book/images/ShowRouteError.png?raw=true)
 
 If you remember, we saw a similar error in a previous chapter.
 The rails router can't find any route matching the format `/tasks/:id`.
@@ -82,7 +82,7 @@ end
 ```
 Let's click on the `Create Task` button once again and see where it leads us.
 
-![alt text](./../img/ShowTaskView.png)
+![alt text](https://github.com/bigbinary/markdown-book-generator/blob/master/book/images/ShowTaskView.png?raw=true)
 
 Now, we are redirected to the show page of the task and the corresponding task's `id` and `description` attributes are visible.
 

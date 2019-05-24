@@ -91,7 +91,7 @@ To display the errors, we make the following changes to the file `new.html.erb`
 ```
 So, if the instance `@task` contains any errors, the control enters the `if` block and iterates through the array returned by the method `errors.full_messages` and displays each element (1 error at a time). Let's try submitting the form with no `description`.
 
-![alt text](./../img/DisplayErrorMessage.png)
+![alt text](https://github.com/bigbinary/markdown-book-generator/blob/master/book/images/DisplayErrorMessage.png?raw=true)
 
 The error message is displayed at the top after the controller renders the new page again and the `if` condition being true (since `description` field was blank), it displays the only error message which we expected.
 

@@ -54,7 +54,7 @@ class Footer extends React.Component {
           rel="noreferrer noopener"
           className="fbOpenSource">
           <img
-            src={`${this.props.config.baseUrl}img/logo.png`}
+            src={`${this.props.config.baseUrl}img/logo.png?raw=true`}
             alt="Bigbinary Ebook"
             width="170"
             height="45"

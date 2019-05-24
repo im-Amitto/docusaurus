@@ -22,7 +22,7 @@ Then second argument is `task`, it is similar to `url_for` for the particular ta
 Third argument is `:method`. We can use various methods like `get, post, delete`.
 Here we want to delete the task so for deleting the method will be `delete`.
 
-![alt text](./../img/AddButton.png)
+![alt text](https://github.com/bigbinary/markdown-book-generator/blob/master/book/images/AddButton.png?raw=true)
 
 After clicking the button, You will get error `No route matches [DELETE]`.
 So let's add the necessary route for delete action.
@@ -40,7 +40,7 @@ Rails.application.routes.draw do
 end
 ```
 
-![alt text](./../img/DestroyActionError.png)
+![alt text](https://github.com/bigbinary/markdown-book-generator/blob/master/book/images/DestroyActionError.png?raw=true)
 
 This error was seen because we had not added destroy action in the Task contoller.
 

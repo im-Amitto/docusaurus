@@ -84,8 +84,8 @@ Initialized empty Git repository in /Users/raj.singh/code/extra/bigbinary-projec
       create  public/404.html
       create  public/422.html
       create  public/500.html
-      create  public/apple-touch-icon-precomposed.png
-      create  public/apple-touch-icon.png
+      create  public/apple-touch-icon-precomposed.png?raw=true
+      create  public/apple-touch-icon.png?raw=true
       create  public/favicon.ico
       create  public/robots.txt
       create  tmp

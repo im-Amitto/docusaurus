@@ -45,11 +45,11 @@ We include the edit button in the `show` view as follows. We'll see from where t
   <%= link_to 'Edit', edit_task_path(@task) %>
 </div>
 ```
-![alt text](./../img/EditLink.png)
+![alt text](https://github.com/bigbinary/markdown-book-generator/blob/master/book/images/EditLink.png?raw=true)
 
 Now whenever we view a task, we see an `edit` link. Let's try clicking on that.
 
-![alt text](./../img/EditRouteError.png)
+![alt text](https://github.com/bigbinary/markdown-book-generator/blob/master/book/images/EditRouteError.png?raw=true)
 
 As seen before, the route for edit action has yet not been defined and hence, no matched route was found for `/tasks/12/edit`.
 
@@ -62,13 +62,13 @@ We have once again given a name to this path using the `as:` keyword. We have al
 
 Now as we load the page again and click on the `edit` link once again, the edit form is rendered by the view `edit.html.erb`.
 
-![alt text](./../img/EditTask.png)
+![alt text](https://github.com/bigbinary/markdown-book-generator/blob/master/book/images/EditTask.png?raw=true)
 
 ## Implement Update Task
 We observe that the `description` field in the above image already has an existing value of that task.
 We change the value to `"My first edit"` and click the `Update Task` button.
 
-![alt text](./../img/UpdateRouteError.png)
+![alt text](https://github.com/bigbinary/markdown-book-generator/blob/master/book/images/UpdateRouteError.png?raw=true)
 
 Again as we have seen quite a few times now, no route matched `[PATCH] /tasks/12`. Hence we go to our `routes.rb` file and add the following line.
 
@@ -79,7 +79,7 @@ We haven't used a `patch` method before. For now, let's just say the router expe
 
 Now, let's try again clicking the `update task` button.
 
-![alt text](./../img/UpdateActionError.png)
+![alt text](https://github.com/bigbinary/markdown-book-generator/blob/master/book/images/UpdateActionError.png?raw=true)
 
 This time the router found the `tasks` controller but could not find the corresponding `update` action (as required by the patch request).
 Hence, now is a good time to add the update action to our `tasks` controller.
@@ -97,6 +97,6 @@ This time we simply use `redirect_to @task` (equivalent to task_url(@task)) as R
 
 Now, we have defined the update route as well as created an update action. Let's try clicking on the button this time.
 
-![alt text](./../img/UpdateTask.png)
+![alt text](https://github.com/bigbinary/markdown-book-generator/blob/master/book/images/UpdateTask.png?raw=true)
 
 We see our new `description` of the task and the `id` remains the same as we simply updated an existing task.

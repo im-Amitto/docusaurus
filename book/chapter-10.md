@@ -182,7 +182,7 @@ we have `collection_select(:task, :assignee_id, User.all, :id, :name)` in the pa
 then we are assigning `id` to `_id` and we'll display name corresponding to that `id`.
 
 We can see how `collection_select` creates dropdown menu in following picture:
-![alt text](./../img/DropdownMenu.png)
+![alt text](https://github.com/bigbinary/markdown-book-generator/blob/master/book/images/DropdownMenu.png?raw=true)
 
 ## Update task controller
 

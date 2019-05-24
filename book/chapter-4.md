@@ -44,7 +44,7 @@ end
 
 Open new task page, and see the error that no template is found.
 
-![alt text](./../img/templateNewMissingError.png)
+![alt text](https://github.com/bigbinary/markdown-book-generator/blob/master/book/images/templateNewMissingError.png?raw=true)
 
 
 ## Adding template for new action and rendering the form
