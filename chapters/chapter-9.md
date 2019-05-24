@@ -1,15 +1,15 @@
 ---
-id: chapter_9
-title: Chapter 9 - Active Record Callbacks and Object Life Cycle
+id: chapter-9
+title: Active Record Callbacks and Object Life Cycle
 ---
-## 9.1 Introduction
+## Introduction
 
 When a blog is created then we might want to generate a permanent url for the blog.
 Similarly when someone changes the password then we might want to send an email to the user that password has been changed.
 
 Such business cases can be achieved if we register some methods that need to be executed by Active Record whenever something changes in the model.
 
-## 9.2 List of Callbacks
+## List of Callbacks
 
 Active Record Callbacks are methods that the library allows us to register in our models.
 They provide hooks in various stages of transaction.
@@ -41,9 +41,9 @@ after_commit/after_rollback
 ```
 
 
-## 9.3 Registering Callbacks
+## Registering Callbacks
 
-### 9.3.1 Using callbacks for validations
+### Using callbacks for validations
 
 In the previous chapter, we had introduced a validation to ensure the task has description.
 Let's try and modify value of `description` attribute through callbacks and observe the behaviour.
@@ -112,7 +112,7 @@ Task.create!
 #=> ActiveRecord::RecordInvalid: Validation failed: Description enter a value for Description
 ```
 
-### 9.3.2 Using callbacks for saving data
+### Using callbacks for saving data
 
 Modify the `Task` model to enable before_validation again
 ```ruby
@@ -184,7 +184,7 @@ task.description
 The task object returned after creation has description updated from the `after_save` callback.
 But the value in the database is the one that was set from our `before_validation` callback.
 
-### 9.3.3 after_save vs after_commit
+### after_save vs after_commit
 
 There is a slight but important difference between `after_save` and `after_commit` callbacks.
 `after_commit` is invoked when transaction reaches `Committed` state.
@@ -193,7 +193,7 @@ have `after_commit` callback invoked but might have had `after_save` run by then
 So if the requirement to carry out an operation only after transaction is complete,
 then we should use `after_commit` instead of `after_save`.
 
-### 9.3.4 Triggering multiple callbacks of same type
+### Triggering multiple callbacks of same type
 
 We can register multiple methods for a callback.
 They will be chained up and executed in the same order in which they are registered.
@@ -228,7 +228,7 @@ What happened here is when `valid?` method was called,
 Then `print_assigned_description` was called and the assigned value is printed.
 
 
-## 9.4 Conditionally triggering the callbacks
+## Conditionally triggering the callbacks
 
 Let's modify our `before_validation` callback as follows
 
@@ -263,7 +263,7 @@ def description_present
 end
 ```
 
-## 9.5 When are these callbacks triggered?
+## When are these callbacks triggered?
 
 The following methods when called on an Active Record object trigger the above described callbacks.
 

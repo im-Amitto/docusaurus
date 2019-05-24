@@ -1,11 +1,11 @@
 ---
-id: chapter_13
-title: Chapter 13 - State Management via Ajax
+id: chapter-13
+title: State Management via Ajax
 ---
 
 In this chapter, we'll add states for our Task.
 
-## 13.1 Introduce various states in tasks like open, in progress, done
+## Introduce various states in tasks like open, in progress, done
 
 There should be three states for any task. `Open`, `In progress` and `Done`.
 Whenever we'll create the task then its state should be `open`.
@@ -51,7 +51,7 @@ end
 Now run `rails db:migrate` to reflect changes into the database.
 
 
-## 13.2 Update states on task show page through ajax requests.
+## Update states on task show page through ajax requests.
 
 Ajax is used to create asynchronous web applications. In this chapter, we will update the state of the task without refreshing the page.
 

@@ -1,15 +1,15 @@
 ---
-id: chapter_12
-title: Chapter 12 - Introduction to Authorization
+id: chapter-12
+title: Introduction to Authorization
 ---
 
-## 12.1 What is Authorization ?
+## What is Authorization ?
 
 Authorization in simple terms, means `What all You can do`. The `You` comes from the authentication which we saw in the previous chapter and as we can’t determine `what you can do` unless we know `who you are`, this makes `Authentication` to be required for `Authorization`.
 
 So in this chapter, we'll `authorize` the `user` to `view` the `tasks` only if the task is `created` by the logged in user or `assigned` to it.
 
-## 12.2 Introduction to Pundit gem
+## Introduction to Pundit gem
 
 Let's consider for once, adding Authorization to our existing application without any extra help. Which files would we start making the changes to? It would be our existing `task` and `user` models and controllers etc.
 
@@ -17,7 +17,7 @@ Hence to take away the code complexity from these files, we'll introduce `Pundit
 
 Pundit helps us in creating role based authorization. It helps us to define policies which are `PORC - Plain Old Ruby Classes` which means that the class does not inherit from other classes nor include in other modules from the framework. Thus makes it very easy to understand the code.
 
-## 12.3 Pundit gem installation.
+## Pundit gem installation.
 
 * Add **gem 'pundit'** to your Gemfile.
 
@@ -29,7 +29,7 @@ Pundit helps us in creating role based authorization. It helps us to define poli
 ```
 * Run command **bundle install**.
 
-## 12.4 Introduction to Policies
+## Introduction to Policies
 
 `Policies`, as defined before, are `PORC`, which house the authorization for a particular page. Here we'll craete a new folder under our `app` directory and name it `policies` and that would add a file named `task_policy.rb`. Then we'll add the following code.
 
@@ -57,7 +57,7 @@ Pundit makes the following assumptions about this class:
 * The second argument is that of a model object, whose authorization you want to check.
 * The class implements some kind of query method, in this case show?. Usually, this will map to the name of a particular       controller action.
 
-## 12.5 Add TaskPolicy
+## Add TaskPolicy
 
 Now let's look add the required code for class `TaskPolicy`
 
@@ -203,7 +203,7 @@ Assumptions-
 
 Since John is not authorized to view the task because of the above assumptions, rather than throwing him an error (the red page), Pundit raises an exception and rescues it by calling the method `user_not_authorized`. A message `All accessable tasks are listd below`is shown and the user is directed to the root path which was set to index action of tasks' controller's index action previously in this chapter.
 
-## 12.6 Introduction to Policy scope.
+## Introduction to Policy scope.
 
 If you closely observe, we did not make a change to our index action. As index action returns a collection of records, we need to apply a condition on a collection and we do that by using `Policy Scope`.
 

@@ -1,12 +1,12 @@
 ---
-id: chapter_8
-title: Chapter 8 - Introduction to Validation
+id: chapter-8
+title: Introduction to Validation
 ---
 
 We observe that when we submit the form with a blank description, a new task is created.
 We would want such entries not to be created. So to prevent this, we can add vaidations to our columns.
 
-## 8.1 - Make `description` field  a Required Field.
+## Make `description` field  a Required Field.
 We go to our task model `task.rb` and add the validation.
 
 ```msg
@@ -14,7 +14,7 @@ class Task < ApplicationRecord
   validates :description, presence: true
 end
 ```
-## 8.2 - Verify Validation
+## Verify Validation
 
 Before saving an object to the database, Rails runs your validations. If these validations produce any errors, Rails does not save the object.
 
@@ -60,7 +60,7 @@ end
 ```
 We check that if the task is valid or not. If `yes` (true), it gets redirected to the `show` page, else it throws an error.
 
-## 8.3 - Display errors
+## Display errors
 
 Rails provides a method `errors.full_messages` which returns an array of all the errors. We can render the users to the new page again if the task isn't valid. For that, we will make a change to the `create` action as follows :
 
@@ -100,7 +100,7 @@ So, if the instance `@task` contains any errors, the control enters the `if` blo
 
 The error message is displayed at the top after the controller renders the new page again and the `if` condition being true (since `description` field was blank), it displays the only error message which we expected.
 
-## 8.4 - Validation Scope
+## Validation Scope
 
 Let's fire up our console using the command `$ rails console`. 
 Get the total number of tasks in your db by running `Task.count`.
@@ -126,7 +126,7 @@ irb(main):003:0> Task.count
 ```
 We observe that even when we had a validation for the description field, the above query still creates a record with blank field. This is beacuse our validation is not on the database level but at Rails level. Hence our tasks count increments by 1.
 
-## 8.5 - Add migration to make description field NOT NULL
+## Add migration to make description field NOT NULL
 
  Now, let's generate a migration for the description field to not allow nil values.
 ```msg
@@ -161,7 +161,7 @@ Open the file `schema.rb` under the `db` folder. Observe the following line care
 `t.string "description", null: false`
 Now our `description` field is set to *NOT NULL*
 
-## 8.6 - Verify Validation Again
+## Verify Validation Again
 
 Now fire up the console again using `rails c`.
 Let's try creating a new task the same way we created before by inserting into the database directly.

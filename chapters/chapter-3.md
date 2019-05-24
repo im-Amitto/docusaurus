@@ -1,12 +1,12 @@
 ---
-id: chapter_3
-title: Chapter 3 - Tasks controller
+id: chapter-3
+title: Tasks controller
 ---
 
 In the last chapter we created Task model and then we created Tasks table..
 In this chapter we'll create tasks and will display them in the browser.
 
-## 3.1 - Controller and Actions
+## Controller and Actions
 
 Rails `Controllers` are Ruby classes, that store a series of actions.
 `Actions` in a controller map to
@@ -62,7 +62,7 @@ now go to the browser and hit `http://0.0.0.0:3000/tasks`.
 
 
 
-## 3.2 - Defining route to map request path to controller action
+## Defining route to map request path to controller action
 
 Whenever we hit URL on the browser rails application looks up for that path in the routes file.
 If a match is found, then the mapped action in the controller is invoked.
@@ -87,7 +87,7 @@ That's because Rails automatically searches for template with name `index.html.e
 Here `.erb` extension is for Embedded Ruby HTML file.
 
 
-## 3.3 - Adding view file
+## Adding view file
 
 So let's create the file that is being expected inside `/app/view/tasks/`.
 This file is responsible for rendering all tasks' information in the browser.
@@ -100,7 +100,7 @@ This file is responsible for rendering all tasks' information in the browser.
 ![alt text](./../img/HelloIndexPage.png).
 
 
-## 3.4 - Using Rails console add two tasks and Run Task.all
+## Using Rails console add two tasks and Run Task.all
 
 Now open your terminal and type `$ rails console`.
 
@@ -149,7 +149,7 @@ irb(main):009:0> Task.all
 irb(main):010:0>
 
 ```
-## 3.5 - Seeing the list of tasks in the browser
+## Seeing the list of tasks in the browser
 
 Let's display all the tasks in the browser.
 

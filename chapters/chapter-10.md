@@ -1,12 +1,12 @@
 ---
-id: chapter_10
-title: Chapter 10 - Introducing User model
+id: chapter-10
+title: Introducing User model
 ---
 
 A task need to be assigned to a user to get it done.
 In this chapter we will see how to assign a user to a task.
 
-## 10.1 Add a User model
+## Add a User model
 
 Let's create a `User` model for our application.
 
@@ -18,7 +18,7 @@ class User < ApplicationRecord
 end
 ```
 
-## 10.2 Create migration
+## Create migration
 
 Now let's generate a migration so that we have a table named `users`.
 
@@ -112,7 +112,7 @@ Now run db:migrate command to reflect it into the database.
 $ rails db:migrate
 ```
 
-## 10.3 Defining associations betweek Task and User models
+## Defining associations betweek Task and User models
 
 A user can have many tasks assigned to him/her and tasks belong to a user.
 Rails provides us an easy way to define such associations.
@@ -135,7 +135,7 @@ end
 
 The `dependent: :destroy` is a callback and would destroy all the tasks created by a `user`, if the `user` is deleted.
 
-## 10.4 Create new `user`
+## Create new `user`
 
 We can perform all CRUD operations for `User` by defining the routes, controller and views
 similar to how we had done in `Task`.
@@ -163,7 +163,7 @@ irb(main):005:0> User.create(name: "John")
 Similarly, Add user `Mary` and `Jane`.
 
 
-## 10.5 Update new task form to assign the user to the task
+## Update new task form to assign the user to the task
 
 Now while creating a task we will assign a user to that task.
 
@@ -189,7 +189,7 @@ then we are assigning `id` to `_id` and we'll display name corresponding to that
 We can see how `collection_select` creates dropdown menu in following picture:
 ![alt text](./../img/DropdownMenu.png)
 
-## 10.7 Update task controller
+## Update task controller
 
 Now update create action of task controller as following.
 
@@ -220,7 +220,7 @@ end
 ```
 
 
-## 10.8 Uniqueness constraint for User's name
+## Uniqueness constraint for User's name
 
 Add uniqueness and presence constraint in the `User` model.
 

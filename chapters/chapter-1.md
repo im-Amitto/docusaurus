@@ -1,9 +1,9 @@
 ---
-id: chapter_1
-title: Chapter 1 - Building a new Rails application
+id: chapter-1
+title: Building a new Rails application
 ---
 
-## 1.1 Build a new Rails application
+## Build a new Rails application
 
 Let's create a new Rails application.
 
@@ -229,7 +229,7 @@ https://github.com/svenfuchs/i18n/releases/tag/v1.1.0
 * bin/rails: spring inserted
 ```
 
-## 1.2 Build database
+## Build database
 
 [SQlite3 database](https://www.sqlite.org/index.html)
 is the default database used when new Ruby on Rails application is created.
@@ -242,7 +242,7 @@ Created database 'db/development.sqlite3'
 Created database 'db/test.sqlite3'
 ```
 
-## 1.3 Start server
+## Start server
 
 Now let's start the server.
 

@@ -1,12 +1,12 @@
 ---
-id: chapter_7
-title: Chapter 7 - Delete the task
+id: chapter-7
+title: Delete the task
 ---
 
 In the last chapter, we saw how to update a task to the database. 
 In this chapter we'll see how to delete a task.
 
-## 7.1 - Adding button to delete the task
+## Adding button to delete the task
 
 Let's add delete button to Index page. 
 For delete button we'll use `button_to` helper method.
@@ -49,7 +49,7 @@ end
 
 This error was seen because we had not added destroy action in the Task contoller.
 
-## 7.2 - Implement `destroy` action in `TasksController`
+## Implement `destroy` action in `TasksController`
 
 Let's implement the destroy action to our `TasksController`.
 
@@ -77,7 +77,7 @@ end
 `params[:id]` contains the id of task to be deleted. To delete the task use `task.destroy`. 
 After destroying the task we are redirecting to tasks index using `redirect_to tasks_url`.
 
-## 7.3 - Flow of deleting a task
+## Flow of deleting a task
 
 So let's go through the Destroy flow of our task.
 
@@ -89,7 +89,7 @@ directs the control to destroy action of TasksController.
 - Then using the `redirect_to tasks_url` we are again loading the page that displays the list of tasks.
 
 
-## 7.4 - Verify results on Rails console
+## Verify results on Rails console
 
 Let's verify whether the task has actually got deleted from the database. 
 

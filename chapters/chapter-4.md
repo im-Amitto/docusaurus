@@ -1,11 +1,11 @@
 ---
-id: chapter_4
-title: Chapter 4 - Adding tasks through browser
+id: chapter-4
+title: Adding tasks through browser
 ---
 
 In the last chapter we created `TasksController` and added `index` action to it.
 
-## 4.1 - Introducing link_to
+## Introducing link_to
 
 Add the following code to `/app/view/tasks/index.html.erb`.
 
@@ -32,7 +32,7 @@ end
 
 ```
 
-## 4.2 - Adding new action in the controller
+## Adding new action in the controller
 
 Open `/app/controllers/tasks_controller.rb`
 and add following code.
@@ -52,7 +52,7 @@ Open new task page, and see the error that no template is found.
 ![alt text](./../img/templateNewMissingError.png)
 
 
-## 4.3 - Adding template for new action and rendering the form
+## Adding template for new action and rendering the form
 
 Following convention similar to index action,
 add a view file `new.html.erb` inside `app/view/tasks` directory.
@@ -93,7 +93,7 @@ Add following line to `/app/config/routes.rb`.
 ```
 
 
-## 4.4 - Implementing create action
+## Implementing create action
 
 Open `/app/controllers/tasks_controller.rb` and
 add following code.
@@ -137,7 +137,7 @@ This is for security purpose so that unnecessary attributes should not get updat
 5) Using `redirect_to tasks_path` route directs the control to the `index` action.
 We can then see our new todo added to the list.
 
-## 4.5 - Verify changes in Rails console after submitting the form
+## Verify changes in Rails console after submitting the form
 
 We can verify whether an entry has been created in the database after form is submitted.
 

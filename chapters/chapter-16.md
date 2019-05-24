@@ -1,9 +1,9 @@
 ---
-id: chapter_16
-title: Chapter 16 - Introduction to Testing and Writing Unit Tests
+id: chapter-16
+title: Introduction to Testing and Writing Unit Tests
 ---
 
-## 16.1 Why write tests?
+## Why write tests?
 Testing is an important aspect of software development life cycle.
 It is a means to ensure the quality of product is maintained.
 When your applcation grows in size, you are likely to
@@ -11,7 +11,7 @@ refactor a lot of code. Writing tests will help us
 ensure that changes made to the code adheres to the desired functionality.
 Fortunately, Rails provides us a very easy and efficient way of writing tests.
 
-## 16.2 Test setup
+## Test setup
 Whenever a new rails application is created using `rails new` command,
 you will notice that there is a `test` directory automatically created.
 This directory also has the following files and directories by default -
@@ -39,7 +39,7 @@ the test configurations.
 Similarly, `application_system_test_case.rb` holds the default configuration for system tests.
 In this chapter we will focus on testing our `Task` model.
 
-## 16.3 Testing Task model
+## Testing Task model
 
 Create a file named `task_test.rb` inside `test/models` directory.
 It's a convention to use `_test` suffix for all test file names.
@@ -59,7 +59,7 @@ Now every method that Rails defines for testing is made available to `TaskTest` 
 By requiring `test_helper`, we have ensured the default configurations for testing are made available.
 Let's explore some of the commonly used methods provided by Rails to test various scenarios.
 
-### 16.3.1 Testing truth value
+### Testing truth value
 Testing is all about knowing if the expectations matches the actual behaviour.
 We'll use `assert` function to test if a statement is true.
 
@@ -129,7 +129,7 @@ end
 
 Run `rails test` with file name and you should be able to see no failures this time.
 
-### 16.3.2 Testing Equality
+### Testing Equality
 
 Add a new method to `task_test.rb` file to test description of the task
 
@@ -164,7 +164,7 @@ So modify the assertion in the above method to the following
 Analogous to `assert_not`, we can use `assert_not_equal` in cases where we want to test inequality.
 
 
-### 16.3.3 Testing nil values
+### Testing nil values
 
 Add a method to `task_test.rb` file to test the created_at of the task record before it's saved.
 
@@ -186,7 +186,7 @@ when the record is saved.
 Verify the results by running `rails test test/models/task_test.rb`.
 
 
-### 16.3.4 Testing errors
+### Testing errors
 ActiveRecord in Rails provides a `find` method
 that loads the record in memory of the passed id.
 If no such record exists, it raises a `ActiveRecord::RecordNoFound` error.
@@ -211,7 +211,7 @@ So in our example, we are testing if using `Task.find` with a random unique id r
 
 Needless to say, the results can be tested by running `rails test test/models/task_test.rb`.
 
-### 16.3.5 Testing expressions
+### Testing expressions
 Let's test if creating a task has actually increased the number of records in the database.
 Add the following code to the test file
 
@@ -264,8 +264,8 @@ In order to test that an expression has not changed, we can use `assert_no_diffe
 Rails provides a larger array of methods for testing and we haven't covered we haven't covered them all in this chapter.
 The idea was to walk through how testing can be done and describe some of the methods that you are most likely to use in the testing.
 
-## 16.4 A few gotchas of testing
-### 16.4.1 The setup method
+## A few gotchas of testing
+### The setup method
 Every public method written in a test file that starts with `test_` is a test case.
 As our application grows, we'll have a lot of test cases and these test cases
 may require a some data to be loaded as part of getting things ready for testing.
@@ -285,7 +285,7 @@ end
 ```
 What's happening here is that all the records in `tasks` table get deleted before every test case is executed.
 
-### 16.4.2 Writing tests in blocks instead of methods
+### Writing tests in blocks instead of methods
 In order to have a better readability, we can modify our tests as follows
 
 ```ruby
@@ -298,7 +298,7 @@ In order to have a better readability, we can modify our tests as follows
 
 This gives the exact behaviour to that of the method `test_error_raised` that we had written in *16.3.4*.
 
-### 16.4.3 Executed a single test
+### Executed a single test
 Everytime we run `rails test test/models/task_test.rb`,
 we notice that all the tests in the file are run.
 Now go to task_test.rb, and choose a test of your choice.

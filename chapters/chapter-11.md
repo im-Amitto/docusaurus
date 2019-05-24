@@ -1,10 +1,10 @@
 ---
-id: chapter_11
-title: Chapter 11 - Authentication
+id: chapter-11
+title: Authentication
 ---
 
 
-## 11.1 Bcrypt gem.
+## Bcrypt gem.
 
 Authentication involves validating password provided by a user. 
 For security reasons passwords should be stored in an encrypted form rather than in plain text.
@@ -24,7 +24,7 @@ Now execute the command mentioned below.
 $ bundle install
 ```
 
-## 11.2 Add credentials fields to User model
+## Add credentials fields to User model
 
 Now let's add 2 fields to `User` model. 
 First field will store username and the second field will store password. 
@@ -52,7 +52,7 @@ Now let's run the migration.
 $ rails db:migrate
 ```
 
-## 11.3 User has_secure_password
+## User has_secure_password
 
 Add following lines to `User` model.
 
@@ -69,7 +69,7 @@ class User < ApplicationRecord
 end
 ```
 
-## 11.4 Flash messages
+## Flash messages
 
 Add following lines to `app/views/layouts/application.html.erb`.
 
@@ -92,11 +92,11 @@ Add following lines to `app/views/layouts/application.html.erb`.
 
 The above added code will iterate through flash hash and print all messages. View file for any action is rendered with application layout by default. `<%= yield %>` will display that action's view file content in it's place.
 
-## 11.5 Signup
+## Signup
 
 Let's implement user signup functionality to add users to our database.
 
-### 11.5.1 Users controller
+### Users controller
 
 Run following command to generate users controller file if not created already.
 
@@ -167,7 +167,7 @@ But now the question arise we created a new dummy user active record object in n
 And this `@user` object already has values assigned to its attributes our form fields will have prefilled values for those fields. 
 Minor rails magic but saves a great deal of effort when developing web functionalities!
 
-### 11.5.2 User routes
+### User routes
 
 Let's add user routes by modifying `taskmanager/config/routes.rb`
 
@@ -186,7 +186,7 @@ Rails.application.routes.draw do
 end
 ```
 
-### 11.5.3 New user view
+### New user view
 
 We will need to create a view file for users controller new action. 
 This view file will display our user signup form. 
@@ -219,12 +219,12 @@ Create a new file named `new.html.erb` in `taskmanager/app/views/users` director
 <% end %>
 ```
 
-## 11.6 Login
+## Login
 
 Lets use the credentials fields we added to authenticate and login a user. 
 We won't need a model for session as we will be storing it in cookie and interact with it using rails session object.
 
-### 11.6.1 Sessions controller
+### Sessions controller
 
 Run following command to generate users controller file if not created already.
 
@@ -261,7 +261,7 @@ class SessionsController < ApplicationController
 end
 ```
 
-### 11.6.2 Session routes
+### Session routes
 
 Let's add session routes by modifying `taskmanager/config/routes.rb`.
 
@@ -278,7 +278,7 @@ Rails.application.routes.draw do
 end
 ```
 
-### 11.6.3 Session views
+### Session views
 
 We will need to create a view file for sessions controller new action. 
 This view file will display our user signup form. 
@@ -301,9 +301,9 @@ Create a new file named `new.html.erb` in `taskmanager/app/views/sessions` direc
 <% end %>
 ```
 
-## 11.7 Logout
+## Logout
 
-### 11.7.1 Sessions controller
+### Sessions controller
 
 Navigate to `taskmanager/app/controllers/sessions_controller.rb` and modify it.
 
@@ -323,7 +323,7 @@ class SessionsController < ApplicationController
 end
 ```
 
-### 11.7.2 Session routes
+### Session routes
 
 Let's add session routes by modifying `taskmanager/config/routes.rb`. Also, let's make the tasks list as the root route for our applicaiton.
 
@@ -340,7 +340,7 @@ end
 ```
 We observe that now if we go to our application and type `localhost:3000`, we see the list of our tasks.
 
-## 11.8 Allow user to view Tasks only if Logged In.
+## Allow user to view Tasks only if Logged In.
 
 Until now, the users were able so see tasks even without logging in.
 Now let's restrict this behaviour and enable viewing tasks only when users are logged in.
@@ -422,7 +422,7 @@ Let's observe what's going on here.
 
 * Yield here is used to insert the rendered view of the tasks' `index.html.erb` file.
 
-## 11.9  Storing information of who created the task
+## Storing information of who created the task
 
 Let's add a new column `creator_id` to tasks table.
 To add a new column to our existing table, we'll generate a new migration.
@@ -448,7 +448,7 @@ $ rails db:migrate
 ```
 And with this the migration is up and running.
 
-## 11.10 Assinging current_user as task's creator
+## Assinging current_user as task's creator
 
 Now, we always want the `creator_id` of a task to bet set as that of the `current_user`. To implement that, we need to make change to the create action of Tasks controller.
 

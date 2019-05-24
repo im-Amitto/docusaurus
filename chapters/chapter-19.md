@@ -1,6 +1,6 @@
 ---
-id: chapter_19
-title: Chapter 19 - Configuring Queue Adapters for Background Processing
+id: chapter-19
+title: Configuring Queue Adapters for Background Processing
 ---
 
 As our application size grows,
@@ -23,7 +23,7 @@ Rails provides a framework known as ***Active Job***
 that helps us declare jobs and making them run on a
 variety of queueing backgrounds.
 
-## 19.1 Choosing a backend adapter
+## Choosing a backend adapter
 
 Active Job has a built-in support for
 multiple queueing backends.
@@ -76,7 +76,7 @@ $ sidekiq
 You'll notice that sidekiq process is running.
 We'll refer this window as 'sidekiq window' whenever required.
 
-## 19.2 Creating a Job
+## Creating a Job
 Run the following command on your terminal
 ```bash
 $ rails g job task_logger
@@ -116,7 +116,7 @@ end
 
 There you go! You've just defined a new job.
 
-## 19.3 Executing the Job
+## Executing the Job
 
 Open your Rails console using `rails c`.
 Now as you'd expect we can execute the `perform`
@@ -165,7 +165,7 @@ TaskLoggerJob.set(wait_until: Date.today.end_of_day).perform_later
 TaskLoggerJob.set(wait: 1.minute).perform_later
 ```
 
-## 19.4 Active Job callbacks
+## Active Job callbacks
 
 There could be cases when you might want to execute
 the `perform` method synchronously too.
@@ -262,7 +262,7 @@ TaskLoggerJob.perform_later
 
 You'll notice that the `before_enqueue` message has got printed only in case when `peform_later` was called.
 
-## 19.5 Using job to log ip address
+## Using job to log ip address
 Now let's use our `TaskLoggerJob` to actually log something.
 Let's log the details of the task after the task had got created.
 Add a `after_create` inside `app/models/task.rb` to

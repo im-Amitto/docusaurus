@@ -1,12 +1,12 @@
 ---
-id: chapter_5
-title: Chapter 5 - Show a task
+id: chapter-5
+title: Show a task
 ---
 
 In the last chapter, we saw how to create a new task and save it to the database.
 Now let's look at a way to display the newly created task.
 
-## 5.1 - Implement show action in TasksController
+## Implement show action in TasksController
 
 Open `/app/controllers/tasks_controller.rb` and add the following lines of code.
 
@@ -19,7 +19,7 @@ end
 .
 ```
 
-## 5.2 - Add view file for show action
+## Add view file for show action
 
 Use the touch command as discussed previously to create a new view file `show.html.erb`.
 
@@ -73,7 +73,7 @@ Open the file `app/views/tasks/index.html.erb`
 We have used the `link_to` method and passed the `task's show page path` for each task.
 Now, by clicking on any task's `description`, it would lead to it's `show` page.
 
-## 5.3 - Redirect to show page after task creation
+## Redirect to show page after task creation
 Now, we'll see how to get to the show page as soon as we click the `Create Task` button.
 We use the `redirect_to` method and mention along with it the path that needs to be followed once the button is clicked. Let's edit the create action in the tasks controller.
 
@@ -91,7 +91,7 @@ Let's click on the `Create Task` button once again and see where it leads us.
 
 Now, we are redirected to the show page of the task and the corresponding task's `id` and `description` attributes are visible.
 
-## 5.4 - Application flow
+## Application flow
 
 So let's go through the flow of our applicaiton till now.
 
@@ -104,7 +104,7 @@ So let's go through the flow of our applicaiton till now.
 - The show action finds the task object by matching the `id` attribute and retrieves the corresponding task object from the databse and saves it in the `@task` instance variable.
 - The control transfers to the view `show.html.erb`, which displays the retrieved task's `id` and `description`.
 
-## 5.5 - Use rails console to search tasks
+## Use rails console to search tasks
 
 Let's fire up the console once again using the `rails console` command.
 

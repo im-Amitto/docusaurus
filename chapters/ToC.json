@@ -1,0 +1,20 @@
+[
+    {"title":"Installing Ruby on Rails and VSCode","name":"chapter-0.md"},
+    {"title":"Building a new Rails application","name":"chapter-1.md"},
+    {"title":"Getting started with Ruby on Rails","name":"chapter-2.md"},
+    {"title":"Task controller","name":"chapter-3.md"},
+    {"title":"Adding tasks through browser","name":"chapter-4.md"},
+    {"title":"Show a task","name":"chapter-5.md"},
+    {"title":"Update the task","name":"chapter-6.md"},
+    {"title":"Delete the task","name":"chapter-7.md"},
+    {"title":"Introduction to Validation","name":"chapter-8.md"},
+    {"title":"Active Record Callbacks and Object Life Cycle","name":"chapter-9.md"},
+    {"title":"Introducing User model","name":"chapter-10.md"},
+    {"title":"Authentication","name":"chapter-11.md"},
+    {"title":"Introduction to Authorization","name":"chapter-12.md"},
+    {"title":"State Management via Ajax","name":"chapter-13.md"},
+    {"title":"Adding comments to Tasks","name":"chapter-14.md"},
+    {"title":"Attaching files","name":"chapter-15.md"},
+    {"title":"Introduction to Testing and Writing Unit Tests","name":"chapter-16.md"},
+    {"title":"Configuring Queue Adapters for Background Processing","name":"chapter-19.md"}
+]

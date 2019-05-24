@@ -1,9 +1,9 @@
 ---
-id: chapter_6
-title: Chapter 6 - Update the task
+id: chapter-6
+title: Update the task
 ---
 
-## 6.1 - Implement Edit Task
+## Implement Edit Task
 
 So far we have implemented how to `create` new tasks, how to view the newly created task's details using the `show` action.
 Now, we'll implement the functionality to edit our existing task's details.
@@ -69,7 +69,7 @@ Now as we load the page again and click on the `edit` link once again, the edit 
 
 ![alt text](./../img/EditTask.png)
 
-## 6.2 - Implement Update Task
+## Implement Update Task
 We observe that the `description` field in the above image already has an existing value of that task.
 We change the value to `"My first edit"` and click the `Update Task` button.
 

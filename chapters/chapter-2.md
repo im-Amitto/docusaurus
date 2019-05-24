@@ -1,9 +1,9 @@
 ---
-id: chapter_2
+id: chapter-2
 title: Chapter 2 - Task model
 ---
 
-## 2.1 - Create Task Model
+## Create Task Model
 
 Let's create a model.
 Models are stored in `app/models`.
@@ -23,7 +23,7 @@ end
 
 We have created our first model.
 
-## 2.2 - Add a migration to create a tasks table
+## Add a migration to create a tasks table
 
 Migrations are a convenient way to alter your database.
 Let's generate our first migration.
@@ -57,7 +57,7 @@ class CreateTasks < ActiveRecord::Migration[5.1]
 end
 ```
 
-## 2.3 - Run migration
+## Run migration
 
 Now that we have added the migration file,
 let's run the migration so that it takes effect
@@ -73,7 +73,7 @@ $ rails db:migrate
 
 ```
 
-## 2.4 - Introduction to Rails console
+## Introduction to Rails console
 
 Rails console is a command line program for interacting with the Rails applications.
 It has the full power of the Ruby language and Rails environment.

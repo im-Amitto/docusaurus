@@ -34,16 +34,11 @@
 6. [Publish Your E-book](https://docusaurus.io/docs/en/publishing)
 
 ## Adding a chapter
-  1. every chapter markdown should start with  
-      ```markdown
-      ---
-      id: chapter_<chapter-number>
-      title: Chapter <chapter-number> <chapter name>  
-      sidebar_label: Installation //Customize name for sidebar (Optional)
-      ---
-      ```
-  2. write the chapter
-  3. To show line-number in code-block.  
+  1. Upload the chapter in chapter folder
+  2. Add the entry of new chapter in `chapter/ToC.json`
+
+## Code-block customization
+  1. To show line-number in code-block.  
   just add `'line-numbers'` in your code-block.
       ```markdown
       ```ruby line-numbers
@@ -52,7 +47,7 @@
       ...
       ...
       ```
-  4. To highlight a line in code block.  
+  2. To highlight a line in code block.  
   just add the line number within `'{}'`. eg.,`{2}` or `{1-4,3}`
       ```markdown
       ```ruby{4}
@@ -61,7 +56,6 @@
       ...
       ...
       ```
-  5. Upload the chapter to `docs` folder in `root` directory
 
 ### Key Files
 

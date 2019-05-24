@@ -37,7 +37,28 @@ window.addEventListener('load', function() {
       }  
     });
   }
-
+  function getNumber(expression){ 
+    return expression.toString().match(/[0-9]+/);
+  }
+  function indexing(){
+    let index=1;
+    let temp;
+    while(temp = document.body.innerHTML.match(/{{chapter-number},[0-9]+}/))
+    {
+      let subTopicCount = getNumber(temp);
+      let subIndex = 1;
+      document.body.innerHTML = document.body.innerHTML.replace(/{{chapter-number},[0-9]*}/, index);
+      
+      while(subTopicCount > 0)
+      {
+        document.body.innerHTML = document.body.innerHTML.replace('{{subtopic}}', index+"."+subIndex);
+        subIndex++;
+        subTopicCount --;
+      }
+      index++;
+    }
+  }
+  indexing();
   highlight(
     '.hljs'
   );

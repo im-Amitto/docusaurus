@@ -1,11 +1,11 @@
 ---
-id: chapter_14
-title: Chapter 14 - Adding comments to Tasks
+id: chapter-14
+title: Adding comments to Tasks
 ---
 
 In this chapter, we'll add the feature to **Display** and **Add Comments** on a Task's show page.
 
-## 14.1 Introduce Comment Model
+## Introduce Comment Model
 
 We'll create a new model Comment. Run the the following command in the terminal.
 
@@ -71,7 +71,7 @@ end
 ```
 `dependent: :destroy` is a callback which makes sure that when a `task` is deleted, all the comments added to it are deleted as well. Similarly, the same callback is passed in the `User` model, which would delete all the comments by a user when the user is deleted.
 
-## 14.2 Add Route for Comments
+## Add Route for Comments
 
 We add a nested route for the comments as we are going to allow to add a comment from an exisiting task's show page.
 
@@ -85,7 +85,7 @@ We add a nested route for the comments as we are going to allow to add a comment
 ```
 `only: [:create]` specifies to create only 1 route which would be for the create action. Hence, a route of the format `/tasks/:task_id/comments` is created which would send a `POST` request to the `create` action of the `comments` controller.
 
-## 14.3 Add Comments controller
+## Add Comments controller
 
 Let's add a **Comments** controller. We'll only be adding the `create` action in our controller as we have defined a route only for this action.
 
@@ -113,7 +113,7 @@ class CommentsController < ApplicationController
 end
 ```
 
-## 14.4 Add comments to the Task's show page.
+## Add comments to the Task's show page.
 
 We'll make a slight change to the show action in the Tasks controller to load all the comments of the loaded task so that we can render those comments on the task's show page.
 

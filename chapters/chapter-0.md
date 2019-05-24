@@ -1,11 +1,4 @@
----
-id: chapter_0
-title: Installing Ruby on Rails & VScode
-sidebar_label: Installation
----
-## Installing Ruby on Rails & VScode
-
-### 0.1 Installing Rails on Mac OS X
+## Installing Rails on Mac OS X
 
 Check the version of your operating system.
 If your version number is 10.9 or higher, follow the next step. If your OS X version is less than 10.9, you should consider upgrading your operating system to 10.9 or higher. It completely free!
@@ -51,7 +44,7 @@ Install rails
 $ gem install rails --no-document
 ```
 
-### 0.2 Installing Rails on Windows
+## Installing Rails on Windows
 
 Download RailsInstaller from `railsinstaller.org` and run it.
 Click through the installer using the default options.
@@ -110,7 +103,7 @@ At at the bottom of the file, you will probably see something like this as one o
 After you did that, in the Command Prompt, run `bundle update`.
 
 
-### 0.3 Installing Rails on Linux
+## Installing Rails on Linux
 
 For Ubuntu:
 
@@ -126,15 +119,15 @@ $ bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/maste
 ```
 
 
-### 0.4 Configure VSCode
+## Configure VSCode
 
-#### Configure indentation
+### Configure indentation
 
 Visual Studio Code is a text editor that allows you to develop applications for Windows, Mac and Linux. It’s hosted on GitHub and it also supports extensions.
 
 While developing applications in Rails, The indentation for the Ruby code is said to be 2 spaces.The Visual Studio Code editor allows us to configure different identations for different languages we use.
 
-#### Language specific editor settings
+### Language specific editor settings
 
 To customize the Visual Studio Code editor by language, we have to run the global command 'Preferences: Configure Language Specific Settings' from the Command Palette(Ctrl+Shift+P).
 
