@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://your-website-url/docs/chapter-0.md</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-website-url/docs/chapter-0.md" /> </url>
+<url> <loc>https://your-website-url/docs/chapter-1.md</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-website-url/docs/chapter-1.md" /> </url>
+<url> <loc>https://your-website-url/docs/chapter-10.md</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-website-url/docs/chapter-10.md" /> </url>
+<url> <loc>https://your-website-url/docs/chapter-11.md</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-website-url/docs/chapter-11.md" /> </url>
+<url> <loc>https://your-website-url/docs/chapter-12.md</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-website-url/docs/chapter-12.md" /> </url>
+<url> <loc>https://your-website-url/docs/chapter-13.md</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-website-url/docs/chapter-13.md" /> </url>
+<url> <loc>https://your-website-url/docs/chapter-14.md</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-website-url/docs/chapter-14.md" /> </url>
+<url> <loc>https://your-website-url/docs/chapter-15.md</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-website-url/docs/chapter-15.md" /> </url>
+<url> <loc>https://your-website-url/docs/chapter-16.md</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-website-url/docs/chapter-16.md" /> </url>
+<url> <loc>https://your-website-url/docs/chapter-19.md</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-website-url/docs/chapter-19.md" /> </url>
+<url> <loc>https://your-website-url/docs/chapter-2.md</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-website-url/docs/chapter-2.md" /> </url>
+<url> <loc>https://your-website-url/docs/chapter-3.md</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-website-url/docs/chapter-3.md" /> </url>
+<url> <loc>https://your-website-url/docs/chapter-4.md</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-website-url/docs/chapter-4.md" /> </url>
+<url> <loc>https://your-website-url/docs/chapter-5.md</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-website-url/docs/chapter-5.md" /> </url>
+<url> <loc>https://your-website-url/docs/chapter-6.md</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-website-url/docs/chapter-6.md" /> </url>
+<url> <loc>https://your-website-url/docs/chapter-7.md</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-website-url/docs/chapter-7.md" /> </url>
+<url> <loc>https://your-website-url/docs/chapter-8.md</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-website-url/docs/chapter-8.md" /> </url>
+<url> <loc>https://your-website-url/docs/chapter-9.md</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-website-url/docs/chapter-9.md" /> </url>
+<url> <loc>https://your-website-url/docs/</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-website-url/docs/" /> </url>
+</urlset>

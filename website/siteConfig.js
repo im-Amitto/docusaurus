@@ -22,6 +22,16 @@ const siteConfig = {
     secondaryColor: '#00E5FF',
   },
 
+  // font-family: georgia, "Times New Roman", times, serif;;
+    /* Custom fonts for website */
+  fonts: {
+    myFont: [
+      "https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+    ],
+    myOtherFont: [
+      "https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+    ]
+  },
 
   //copyright in footer
   copyright: `Copyright © ${new Date().getFullYear()} BigBinary`,
@@ -39,7 +49,8 @@ const siteConfig = {
     './../js/custom.js',
   ],
   stylesheets: [
-    './../css/prism.css'
+    './../css/prism.css',
+    './../css/custom.css'
   ],
 
   // On page navigation for the current documentation page.

@@ -1,11 +1,44 @@
 
+/* Montserrat Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html, body{
+  font-size: 17px;
+  font-family: 'Montserrat', sans-serif!important;
+  background-color: #fafafa!important;
+}
 
 a{
   color: #002f72!important;
 }
-nav{
-  display: none;
+a:hover{
+  text-decoration: underline;
 }
+
+/* Footer */
+.nav-footer{
+  padding: 0.5em 0 0.5em 0; 
+}
+
+.copyright{
+  color:white!important;
+}
+
+/* Navigation Buttons */
+.docs-next, .docs-prev{
+  color:black!important;  
+}
+.docs-next:hover, .docs-prev:hover{
+  color:white!important;  
+}
+
+/* Right sidebar */
+
+.toc-headings li{
+  font-size: 14px!important;
+}
+
+
 .close-right-btn {
   float: right;
   background-color: transparent; 
@@ -18,23 +51,29 @@ nav{
   color: white;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+/* Navbar */
+nav{
+  display: none;
+}
+
 header a
 {
+  color:white!important;
   text-decoration: none!important;
 }
-html, body{
-  font-size: 17px;
-  font-family: georgia, "Times New Roman", times, serif;
-  background-color: #fafafa!important;
-}
+
 .navGroup{
   display: none;
 }
-.hljs{
-display: inline;
-padding: 0;
-}
+
+
 /* Code block */
+.hljs{
+  display: inline;
+  padding: 0;
+  }
+  
 pre {
     position: relative;
   }

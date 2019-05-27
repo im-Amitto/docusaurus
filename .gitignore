@@ -6,7 +6,6 @@ docs
 lib/core/metadata.js
 lib/core/MetadataBlog.js
 
-website/build
 website/translated_docs
 website/yarn.lock
 website/node_modules
