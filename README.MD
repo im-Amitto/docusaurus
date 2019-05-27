@@ -32,9 +32,23 @@
     ```
     You can find your generated e-book at `website/build` folder.  
 
-6. [Publish Your E-book](https://docusaurus.io/docs/en/publishing)
-
 >you can delete `docs` folder as it's generated whenever you build the project
+
+## Hosting on Netlify
+
+Steps to configure your Docusaurus-powered site on Netlify.
+
+1.  Select **New site from Git**
+2.  Connect to your preferred Git provider.
+3.  Select the branch to deploy. Default is `master`
+4.  Configure your build steps:
+
+    * For your build command enter: `cd website; npm install; npm run build;`
+    * For publish directory: `website/build/<projectName>` (use the `projectName` from your `siteConfig`)
+
+1.  Click **Deploy site**
+
+You can also configure Netlify to rebuild on every commit to your repository, or only `master` branch commits.
 
 ## Adding a chapter
   1. Upload the chapter in chapter folder
