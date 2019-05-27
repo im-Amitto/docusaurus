@@ -1,4 +1,26 @@
 window.addEventListener('load', function() {
+
+  function button(label, ariaLabel, className) {
+    const btn = document.createElement('button');
+    btn.setAttribute('type', 'button');
+    btn.setAttribute('aria-label', ariaLabel);
+    btn.setAttribute('onclick', "hide('.close-right-btn')");
+    btn.innerHTML =
+      '<div>' +
+      '<strong >' +
+      label +
+      '</strong>' +
+      '</div>';
+      btn.classList.add("close-right-btn");
+    return btn;
+  }
+  function addCloseButton(codeBlockSelector, btn) {
+    document.querySelectorAll(codeBlockSelector).forEach(function(code) {
+      code.insertBefore(btn.cloneNode(true),code.childNodes[0]);
+    });
+  }
+
+
   function highlight(codeBlockSelector) {
     document.querySelectorAll(codeBlockSelector).forEach(function(code) {
       var classnames = code.className;
@@ -62,5 +84,18 @@ window.addEventListener('load', function() {
   highlight(
     '.hljs'
   );
+
+  addCloseButton(
+    '.onPageNav',
+    button('X', 'Close Right Panel',  'btnClipboard'),
+  );
+
 });
 
+function hide(codeBlockSelector) {
+  document.querySelectorAll(codeBlockSelector).forEach(function(code) {
+    code.parentNode.childNodes.forEach(o=>{
+      o.style.display = 'none';
+    })    
+  });
+}
