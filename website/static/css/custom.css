@@ -32,7 +32,7 @@ a:hover{
 /* Right sidebar */
 
 .toc-headings li{
-  font-size: 15px!important;
+  font-size: 14px!important;
 }
 
 
@@ -57,6 +57,11 @@ nav{
 header a
 {
   color:white!important;
+  text-decoration: none!important;
+}
+
+header a:hover
+{
   text-decoration: none!important;
 }
 

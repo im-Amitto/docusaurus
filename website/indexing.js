@@ -37,7 +37,7 @@ fs.readdir(target, (err, files) => {
     docs.forEach(element => {
       sidebar['docs']['book'].push(element.name);
       body +=
-      `#### [Chapter - `+index+" "+element.title+`](./`+element.name+`)\n`;
+      `#### [Chapter `+index+" - "+element.title+`](./`+element.name+`)\n`;
       
       var contents = fs.readFileSync(root+element.name, 'utf8');
       contents = `---
@@ -52,7 +52,7 @@ title: `+element.title+`
       subtopics.forEach(subTopic =>{
         subTopic = subTopic.replace(/\n##/g,'');
         topicName = subTopic.replace(/ [0-9]+\.[0-9]+/g,'');
-        body += `- [`+index+"."+subIndex+" "+topicName+`](./`+element.name+`#`+text2url(subTopic)+`)\n`;
+        body += `- [**`+index+"."+subIndex+"** "+topicName+`](./`+element.name+`#`+text2url(subTopic)+`)\n`;
         subIndex++;
       })
 
