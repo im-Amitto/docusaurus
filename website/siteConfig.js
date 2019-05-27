@@ -49,8 +49,7 @@ const siteConfig = {
     './../js/custom.js',
   ],
   stylesheets: [
-    './../css/prism.css',
-    './../css/custom.css'
+    './../css/prism.css'
   ],
 
   // On page navigation for the current documentation page.
