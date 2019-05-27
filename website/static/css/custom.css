@@ -25,13 +25,14 @@ a:hover{
   color:black!important;  
 }
 .docs-next:hover, .docs-prev:hover{
-  color:white!important;  
+  color:white!important; 
+  text-decoration: none!important; 
 }
 
 /* Right sidebar */
 
 .toc-headings li{
-  font-size: 14px!important;
+  font-size: 15px!important;
 }
 
 
