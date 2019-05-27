@@ -2,13 +2,13 @@
   "scripts": {
     "examples": "docusaurus-examples",
     "start": "node indexing.js && docusaurus-start",
-    "build": "node indexing.js && docusaurus-build",
+    "build": "docusaurus-build",
     "publish-gh-pages": "docusaurus-publish",
     "write-translations": "docusaurus-write-translations",
     "version": "docusaurus-version",
     "rename-version": "docusaurus-rename-version"
   },
   "devDependencies": {
-    "docusaurus": "^1.9.0"
+    "docusaurus": "^1.10.0"
   }
 }
