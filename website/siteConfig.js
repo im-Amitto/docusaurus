@@ -38,6 +38,7 @@ const siteConfig = {
     '/js/custom.js',
   ],
   stylesheets: [
+    'https://fonts.googleapis.com/css?family=Montserrat',
     '/css/prism.css',
     '/css/custom.css'
   ],
