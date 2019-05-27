@@ -8,7 +8,7 @@ nav{
 }
 .close-right-btn {
   float: right;
-  background-color: white; 
+  background-color: transparent; 
   color: black; 
   border: 2px solid transparent;
 }
@@ -22,10 +22,10 @@ header a
 {
   text-decoration: none!important;
 }
-body{
+html, body{
   font-size: 17px;
   font-family: georgia, "Times New Roman", times, serif;
-
+  background-color: #fafafa!important;
 }
 .navGroup{
   display: none;

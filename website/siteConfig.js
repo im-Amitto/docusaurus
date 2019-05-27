@@ -22,19 +22,6 @@ const siteConfig = {
     secondaryColor: '#00E5FF',
   },
 
-  /* Custom fonts for website */
-  /*
-  fonts: {
-    myFont: [
-      "Times New Roman",
-      "Serif"
-    ],
-    myOtherFont: [
-      "-apple-system",
-      "system-ui"
-    ]
-  },
-  */
 
   //copyright in footer
   copyright: `Copyright © ${new Date().getFullYear()} BigBinary`,
@@ -48,9 +35,8 @@ const siteConfig = {
   scripts: [
     'https://buttons.github.io/buttons.js',
     'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
-    './../js/code-block-buttons.js',
     './../js/prism.js',
-    './../js/highlighter.js',
+    './../js/custom.js',
   ],
   stylesheets: [
     './../css/prism.css'
