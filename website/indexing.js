@@ -37,7 +37,7 @@ fs.readdir(target, (err, files) => {
     docs.forEach(element => {
       sidebar['docs']['book'].push(element.name);
       body +=
-      `#### [Chapter `+index+" - "+element.title+`](./`+element.name+`)\n`;
+      `### [Chapter `+index+" - "+element.title+`](./`+element.name+`)\n`;
       
       var contents = fs.readFileSync(root+element.name, 'utf8');
       contents = `---
