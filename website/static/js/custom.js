@@ -1,9 +1,25 @@
 window.addEventListener('load', function() {
 
+
+  function floatRight(btn)
+  {
+    const div  = document.createElement('div');
+    
+    const clear = document.createElement('div');
+    clear.style.clear = 'both';
+    div.append(btn);
+    div.append(clear);
+
+    return div;
+  }
 //Add copy to clipboard button
   function button(label, ariaLabel, icon, className, action) {
+    
+    
     const btn = document.createElement('button');
-    btn.classList.add('btnIcon', className);
+    className.forEach(c => {
+      btn.classList.add(c);  
+    })
     btn.setAttribute('type', 'button');
     btn.setAttribute('aria-label', ariaLabel);
     if(action){
@@ -16,6 +32,7 @@ window.addEventListener('load', function() {
       label +
       '</strong>' +
       '</div>';
+      
     return btn;
   }
 
@@ -27,7 +44,6 @@ window.addEventListener('load', function() {
 
   const copyIcon =
     '<svg width="12" height="12" viewBox="340 364 14 15" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M342 375.974h4v.998h-4v-.998zm5-5.987h-5v.998h5v-.998zm2 2.994v-1.995l-3 2.993 3 2.994v-1.996h5v-1.995h-5zm-4.5-.997H342v.998h2.5v-.997zm-2.5 2.993h2.5v-.998H342v.998zm9 .998h1v1.996c-.016.28-.11.514-.297.702-.187.187-.422.28-.703.296h-10c-.547 0-1-.452-1-.998v-10.976c0-.546.453-.998 1-.998h3c0-1.107.89-1.996 2-1.996 1.11 0 2 .89 2 1.996h3c.547 0 1 .452 1 .998v4.99h-1v-2.995h-10v8.98h10v-1.996zm-9-7.983h8c0-.544-.453-.996-1-.996h-1c-.547 0-1-.453-1-.998 0-.546-.453-.998-1-.998-.547 0-1 .452-1 .998 0 .545-.453.998-1 .998h-1c-.547 0-1 .452-1 .997z" fill-rule="evenodd"/></svg>';
-
 
   const clipboard = new ClipboardJS('.btnClipboard', {
     target: function(trigger) {
@@ -119,23 +135,42 @@ window.addEventListener('load', function() {
     '.hljs'
   );
   
+  const closeIcon = `<img height="20px" width="20px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEHSURBVEhL7ZVNCsIwEIXrz1HUYwiuBA8jbkU8h4ILxZ14J0X0DoKI+p5mIAzNJLZ1IfTBh3Uw81EzTbM6v0jbfaamCRqfy/SMwQ0sQIuFSLrgCA6gx0JKJuDpsQGWjJIzkN9fQAeYYcM78EUkJGNDXyIsQTQroBcSLQtJrqAPomEzNtUNiMgsyRAkx5LtQSUSiSXTFJZIUmSlJRLKdiBP8gAjUElCGy/IgJRKTCKUkuknXuDfpWukkCwk4cZzT9ZezecrmSWR6WKz0DQmyXjM8xTWi/NG2JLNgBm+U07AX2Q9JyHZFETD9wmP+phEomVbV0sKx5pH/eD9LR425l3M3XWdv0uWvQDq/6w9IEeDKwAAAABJRU5ErkJggg==">`;
+  
+  
   addCloseButton(
-    '.onPageNav',
-    button('X', 'Close Right Panel',  null, 'close-right-btn', "hide('.close-right-btn')"),
+    '.onPageNav',floatRight(button('', 'Close Right Panel', closeIcon, ['close-right-btn'], "hide('.toc-headings');hide('.close-right-btn')")),
   );
 
   addCopyButton(
     '.hljs',
-    button('Copy', 'Copy code to clipboard', copyIcon, 'btnClipboard',null),
+    button('Copy', 'Copy code to clipboard', copyIcon, ['btnIcon','btnClipboard'],null),
   );
 
 });
 
+//Show Right Sidebar
+function show(codeBlockSelector) {
+  document.querySelectorAll(codeBlockSelector).forEach(function(obj) {
+    obj.style.display = "block";
+    if(obj.childNodes)
+    {
+      obj.childNodes.forEach(o=>{
+        o.style.display = 'block';
+      })
+    }   
+  });
+}
+
 //Hide Right Sidebar
 function hide(codeBlockSelector) {
-  document.querySelectorAll(codeBlockSelector).forEach(function(code) {
-    code.parentNode.childNodes.forEach(o=>{
-      o.style.display = 'none';
-    })    
+  document.querySelectorAll(codeBlockSelector).forEach(function(obj) {
+    obj.style.display = "none";
+    if(obj.childNodes)
+    {
+      obj.childNodes.forEach(o=>{
+        o.style.display = 'none';
+      })
+    }   
   });
 }

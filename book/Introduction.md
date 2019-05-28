@@ -2,7 +2,7 @@
 id: index
 title: Introduction
 ---
->Application is avalable at https://github.com/bigbinary/learn-ruby-on-rails-book-application.
+>Application is available at https://github.com/bigbinary/learn-ruby-on-rails-book-application.
 
 {{table-of-content}}
 

@@ -42,6 +42,7 @@ const siteConfig = {
     '/css/prism.css',
     '/css/custom.css'
   ],
+  scrollToTop : true,
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',

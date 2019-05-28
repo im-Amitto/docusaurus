@@ -16,8 +16,16 @@ var sidebar = {
 var introduction = fs.readFileSync(root+'Introduction.md', 'utf8');
 
 var head =  `## Table of Contents\n\n`;
-
 var body="";
+//Contain script
+var footer=`
+<script>
+window.addEventListener('load', function() {
+show('.toc-headings');
+show('.close-right-btn');
+})
+</script>
+`;
 
 let index = 1;
 
@@ -40,19 +48,49 @@ fs.readdir(target, (err, files) => {
       `### [Chapter `+index+" - "+element.title+`](./`+element.name+`)\n`;
       
       var contents = fs.readFileSync(root+element.name, 'utf8');
-      contents = `---
-id: `+element.name+`
-title: `+element.title+`
----\n\n`+ contents;
+      
+      contents = `---`+
+      `\nid: `+element.name+
+      `\ntitle: Chapter `+index+
+      `\n---\n\n`+`# `+element.title+`\n`+ contents + footer;
 
       var subtopics = contents.match(/[^#]## [0-9/.A-Za-z ,-]*/g);
-
+      var subsubtopics = contents.match(/[^#]### [0-9/.A-Za-z ,-]*/g); 
       let subIndex =1;
 
-      subtopics.forEach(subTopic =>{
-        subTopic = subTopic.replace(/\n##/g,'');
-        topicName = subTopic.replace(/ [0-9]+\.[0-9]+/g,'');
-        body += `- [**`+index+"."+subIndex+"** "+topicName+`](./`+element.name+`#`+text2url(subTopic)+`)\n`;
+      subtopics.forEach(oldTopic=>{
+        start = contents.match(subtopics[subIndex-1]).index;
+        end = contents.match(subtopics[subIndex]).index;
+        newTopic = oldTopic.replace('##','## '+index+'.'+subIndex);
+        contents = contents.replace(oldTopic,newTopic);
+        newTopic = newTopic.replace(/\n##/g,'');
+        topicName = newTopic.replace(/ [0-9]+\.[0-9]+/g,'');
+        body += `- [**`+index+"."+subIndex+"** "+topicName+`](./`+element.name+`#`+text2url(newTopic)+`)\n`;
+        let subsubindex = 1;
+        if(subsubtopics)
+        {
+          if(end)
+          {
+            subsubtopics.forEach(obj=>{
+              if(!contents.match(obj)) return true;
+              loc = contents.match(obj).index;
+              if(loc > start && loc < end){
+                newObj = obj.replace('###','### '+index+'.'+subIndex+'.'+subsubindex);
+                contents = contents.replace(obj,newObj);
+                subsubindex++;
+              }
+            })
+          }
+          else
+          {
+            subsubtopics.forEach(obj=>{
+              newObj = obj.replace('###','### '+index+'.'+subIndex+'.'+subsubindex);
+              contents = contents.replace(obj,newObj);
+              subsubindex++;
+            })
+          }
+        }
+  
         subIndex++;
       })
 
