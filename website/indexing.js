@@ -51,8 +51,8 @@ fs.readdir(target, (err, files) => {
       
       contents = `---`+
       `\nid: `+element.name+
-      `\ntitle: Chapter `+index+
-      `\n---\n\n`+`# `+element.title+`\n`+ contents + footer;
+      `\ntitle: `+index+`. `+element.title+
+      `\n---\n\n`+ contents + footer;
 
       var subtopics = contents.match(/[^#]## [0-9/.A-Za-z ,-]*/g);
       var subsubtopics = contents.match(/[^#]### [0-9/.A-Za-z ,-]*/g); 
